@@ -1,0 +1,65 @@
+body{
+  display: grid;
+  grid-template-columns: 15% auto;
+}
+
+#navbar{
+  grid-column: 1 / 2;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+#head, .nav-link{
+  padding: 0.5em;
+}
+
+header{
+  font-size: 20pt;
+}
+
+.nav-link{
+  font-size: 16pt;
+  text-decoration: none;
+  color: lightslategray;
+}
+
+.nav-link:hover{
+  color: darkgray;
+}
+
+main{
+  grid-column: 2 / 3;
+  padding: 1em;
+}
+
+p, code{
+  font-size: 14pt;
+}
+
+.footer{
+  text-align: center;
+}
+
+@media( max-width: 540px ){
+  body{
+    grid-template-columns: 35% 65%;
+  }
+
+  header{
+    font-size: 16pt;
+  }
+
+  .nav-link{
+    font-size: 14pt;
+  }
+
+  main{
+    padding: 0;
+  }
+
+  p, code{
+    font-size: 12pt;
+  }
+  
+}
